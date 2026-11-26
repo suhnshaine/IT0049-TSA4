@@ -9,6 +9,7 @@ class Task extends Model
     protected $fillable = [
         'title',
         'status',
-        'task_date'
+        'task_date',
+        'is_archived'
     ];
 }
