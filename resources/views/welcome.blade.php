@@ -11,7 +11,7 @@
     <h1>Tasks for Today Management System</h1>
 
     <nav>
-        <a href="/">Home</a> |
+        <a href="/">Dashboard</a> |
         <a href="/about">About</a> |
         <a href="/tasks">Task List</a> |
         <a href="/profile">Profile</a>
