@@ -31,6 +31,10 @@ Route::get(
     ]
 );
 
+Route::get('/dashboard', function () {
+    return redirect('/');
+})->middleware(['auth'])->name('dashboard');
+
 Route::middleware(
     ['auth']
 )->group(function () {

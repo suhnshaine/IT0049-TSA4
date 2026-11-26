@@ -96,6 +96,10 @@ return [
             ],
             'retry_after' => 60,
         ],
+        'test_recipient'
+        => env(
+            'TEST_RECIPIENT'
+        ),
 
     ],
 

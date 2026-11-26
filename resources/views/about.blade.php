@@ -16,11 +16,11 @@
         <a href="/tasks">Task List</a> |
         <a href="/profile">Profile</a> |
         @auth
-        <a href="{{ route('create') }}" class="btn btn-primary">New Task</a> |
+        <a href="{{ url('/tasks/create') }}" class="btn btn-primary">New Task</a> |
         <form method="POST" action="{{ route('logout') }}">
             @csrf
 
-            <button type="submit" class="btn btn-edit">
+            <button type="submit">
                 Logout
             </button>
         </form>
