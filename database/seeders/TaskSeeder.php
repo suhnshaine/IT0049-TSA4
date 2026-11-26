@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Task;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class TaskSeeder extends Seeder
 {
@@ -61,7 +62,8 @@ class TaskSeeder extends Seeder
         User::create([
             'username' => 'demo_user',
             'full_name' => 'Juan Dela Cruz',
-            'email' => 'juan@example.com'
+            'email' => 'juan@example.com',
+            'password' => Hash::make('password')
         ]);
     }
 }
